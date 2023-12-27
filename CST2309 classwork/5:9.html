@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>5/9m</title>
+      <script type="text/javascript">
+      	function imgageDog()
+      	{
+      		var ImageObject = document.getElementById("CatDog");
+      		ImageObject.arc = "http://www.websitedevelopmentbook.com/Chapter11/Dog.jpg";
+      	}
+      	function imageCat()
+      	{
+      		var ImageObject = document.getElementById("CatDog");
+      		ImageObject.arc = "http://www.websitedevelopmentbook.com/Chapter11/Cat.jpg";
+      	}
+      	function hiddenMessage()
+      	{
+			var paragraphObject = document.getElementById("Paragraph");
+ 			paragraphObject.innerHTML = "Dogs are better than cats because .................";
+      	}
+      	function viewedMessage()
+      	{
+ 			var paragraphObject = document.getElementById("Paragraph");
+ 			paragraphObject.innerHTML = "Cats are better than dogs because .................";
+		}
+      </script>
+  </head>
+  <body>
+  	<img id= "CatDog" onmouseover="imageCat()" onmouseout="imageDog()" src="http://www.websitedevelopmentbook.com/Chapter11/Dog.jpg">
+
+  	<p>Paragraph One</p>
+  	<p id="middleParagraph"> Paragraph Two</p>
+  	<p>Paragraph Three</p>
+  	<button onclick="alert(document.getElementById('middleParagraph').innerHTML);"> Show InnerHtml</button>
+
+  	<p id="Paragraph" onmouseover="hiddenMessage()" onmouseout="viewedMessage()">Cats are better than dogs because .................</p>
+ </body>
+</html>
+
+
+dyrqor-nijcoq-Jiswo0
